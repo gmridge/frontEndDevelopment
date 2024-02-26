@@ -1,0 +1,24 @@
+.animated-theme {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    margin: 10px;
+    position: absolute;
+    animation-name: bounce;
+    animation-duration: 8s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(100px);
+        background-position-x: lightblue;
+    }
+    to {
+        transform: translateY(-100px);
+        background-color: mediumpurple;
+    }
+}

@@ -1,0 +1,150 @@
+<!-- Module 4 pg 52 - Using only bootstrap elements,
+    create this web application, making it responsive,
+    4 cards when large, 2 when medium, and 1 when small -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <title>Cards Lab 4</title>
+</head>
+
+<body>
+   <center><h1>Cards Lab 4</h1><br/>
+    <h2>Top 8 Movies of 2023</h2></center>
+  <script src="https://i.pinimg.com/564x/c9/8a/2a/c98a2a6f6083b769941db8addd4e59e3.jpg"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <div class="card" style="width: 19rem; height: 25rem;">
+          <img src="https://deadline.com/wp-content/uploads/2023/07/230525140441-10-barbie-movie.jpg"
+            class="card-img-top" alt="Barbie">
+          <div class="card-body">
+            <h5 class="card-title">The Barbie Movie</h5>
+            <p class="card-text">Warner Bros. | July 21<br />
+              Domestic Total (2023): $636.2M<br />
+              Domestic Opening Weekend: $162.0M</p>
+            <a href="https://www.imdb.com/title/tt1517268/" class="btn btn-primary">IMDb</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 19rem; height: 25rem;">
+          <img src="https://variety.com/wp-content/uploads/2023/04/MCDSUMA_UV036.jpg?w=1000" class="card-img-top"
+            alt="Super Mario Bros">
+          <div class="card-body">
+            <h5 class="card-title">The Super Mario Bros. Movie</h5>
+            <p class="card-text">Universal Pictures | April 5<br />
+              Domestic Total (2023): $574.9M<br />
+              Domestic Opening Weekend: $146.3M</p>
+            <a href="https://www.imdb.com/title/tt6718170/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_super%2520mario"
+              class="btn btn-primary">IMDb</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 19rem; height: 25rem;">
+          <img
+            src="data:image/jpeg;base64,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"
+            class="card-img-top" alt="Spider-Man">
+          <div class="card-body">
+            <h5 class="card-title">Spider-Man: Across the Spider-Verse</h5>
+            <p class="card-text">Sony / Columbia Pictures | June 2<br />
+              Domestic Total (2023): $381.3M<br />
+              Domestic Opening Weekend: $120.6M</p>
+            <a href="https://www.imdb.com/title/tt9362722/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_spider"
+              class="btn btn-primary">IMDb</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 19rem; height: 25rem;">
+          <img
+            src="https://images.immediate.co.uk/production/volatile/sites/3/2023/02/guardians-of-the-galaxy-3-peter-quill-star-lord-gamora-139eb72.jpg?quality=90&resize=980,654"
+            class="card-img-top" alt="Gaurdians of the Galaxy 3">
+          <div class="card-body">
+            <h5 class="card-title">Guardians of the Galaxy Vol. 3</h5>
+            <p class="card-text">Marvel Studios | May 5<br />
+              Domestic Total (2023): $358.9M<br />
+              Domestic Opening Weekend: $118.4M</p>
+            <a href="https://www.imdb.com/title/tt6791350/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_guardians"
+              class="btn btn-primary">IMDb</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="row">
+      <div class="col">
+        <div class="card" style="width: 19rem; height: 25rem;">
+          <img src="https://hips.hearstapps.com/hmg-prod/images/gf-15120-msg-64bf954d6a581.jpg" class="card-img-top"
+            alt="Oppenheimer">
+          <div class="card-body">
+            <h5 class="card-title">Oppenheimer</h5>
+            <p class="card-text">Universal Pictures | July 21</br>
+              Domestic Total (2023): $326M<br />
+              Domestic Opening Weekend: $82.4M</p>
+            <a href="https://www.imdb.com/title/tt15398776/?ref_=nv_sr_srsg_1_tt_4_nm_3_q_oppen"
+              class="btn btn-primary">IMDb</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 19rem; height: 25rem;">
+          <img
+            src="https://classic.imgix.net/movies/headers/thelittlemermaid.jpg?auto=compress,format&w=1440&h=602&fit=crop&v=20221026"
+            class="card-img-top" alt="The Little Mermaid">
+          <div class="card-body">
+            <h5 class="card-title">The Little Mermaid</h5>
+            <p class="card-text">Walt Disney Studios | May 26<br />
+              Domestic Total (2023): $298.1M<br />
+              Domestic Opening Weekend: $95.5M</p>
+            <a href="https://www.imdb.com/title/tt5971474/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_the%2520little%2520mer"
+              class="btn btn-primary">IMDb</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 19rem; height: 25rem;">
+          <img
+            src="https://people.com/thmb/EaNd1K83KYMJmC7Ozz_qebX3DnI=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(1159x347:1161x349):format(webp)/avatar-2-way-of-the-water-trailer-110222-3-7fcc8ab436204e46ab9ab7bb007b5fbe.jpg"
+            class="card-img-top" alt="Avatar: The Way of Water">
+          <div class="card-body">
+            <h5 class="card-title">Avatar: The Way of Water</h5>
+            <p class="card-text">Walt Disney / 20th Century Studios | December 16, 2022<br />
+              Domestic Total: $684.0M<br />
+              Domestic Total (2023 Only): $283.0M</p>
+            <a href="https://www.imdb.com/title/tt1630029/?ref_=nv_sr_srsg_0_tt_8_nm_0_q_avat"
+              class="btn btn-primary">IMDb</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 19rem; height: 25rem;">
+          <img
+            src="https://m.media-amazon.com/images/M/MV5BZDQ1OWU3N2MtMjI1OS00YWQ5LTlkN2UtYmVmYjg1OTY4YzNmXkEyXkFqcGdeQWpnYW1i._V1_.jpg"
+            class="card-img-top" alt="Ant-Man and the Wasp">
+          <div class="card-body">
+            <h5 class="card-title">Ant-Man and the Wasp: Quantumania</h5>
+            <p class="card-text">Walt Disney Studios / Marvel Studios | June 15<br />
+              Domestic Total (2023): $214.5M<br />
+              Domestic Opening Weekend: $106.1M</p>
+            <a href="https://www.imdb.com/title/tt10954600/?ref_=fn_al_tt_1" class="btn btn-primary">IMDb</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

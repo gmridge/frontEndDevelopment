@@ -1,0 +1,26 @@
+* {
+  background-color: rgb(186, 255, 252);
+  background-size: 100%;
+}
+
+
+.card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.2);
+}
+
+.card-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-title {
+  font-size: 1.2em;
+  margin-top: 5px;
+  text-align: center;
+}
+
